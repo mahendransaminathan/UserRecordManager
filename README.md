@@ -6,6 +6,6 @@
 5. Install SQLite Extension for VS Code (Look for the SQLite extension by alexcvzz)
 6. Go to src folder  
 7. Run the following commands to create a Database  
-   • dotnet ef migrations add InitialCreate  
+   • dotnet ef migrations add InitialCreate1    
    • dotnet ef database update  
 8. Run the following command from Terminal - dotnet run  
