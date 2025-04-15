@@ -8,7 +8,8 @@
 7. Run the following commands to create a Database  
    • dotnet ef migrations add InitialCreate1    
    • dotnet ef database update  
-8. Run the following command from Terminal - dotnet run
-9. Open the application in Swagger with the following URL  
+8. Go back to UserRecordManager folder from Terminal    
+9. Run the following command - dotnet run  
+10. Open the application in Swagger with the following URL  
    • http://localhost:5037/swagger/index.html  
 
