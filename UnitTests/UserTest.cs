@@ -79,28 +79,6 @@ namespace UserProfile.NUnitTests
             Assert.That(okResult.Value, Is.EqualTo(users));
         }
 
-        // [Test]
-        // public async Task CreateUser_ReturnsBadRequest_WhenUserIsInvalid()
-        // {
-        //     // Create an incomplete User object (only set required properties for testing purposes)
-        //     var user = new User
-        //     {
-        //         FirstName = "",  // Simulating an invalid user (missing required value)
-        //         LastName = "",    // You can leave other required fields empty or invalid as needed
-        //         Email = "",       // Simulate an invalid email
-        //         Username = "",    // Simulate an invalid username
-        //         Password = "",    // Simulate an invalid password
-        //         PhoneNumber = "",  // Simulate an invalid phone number
-        //         DateOfBirth = DateTime.MinValue // Simulate an invalid date of birth
-        //     };
-        //     _controller.ModelState.AddModelError("FirstName", "Required");
-
-            
-        //     var result = await _controller.CreateUser(user);
-
-        //     Assert.IsInstanceOf<BadRequestObjectResult>(result.Result);
-        // }
-
         [Test]
         public async Task UpdateUser_ReturnsOk_WhenUpdatedSuccessfully()
         {
