@@ -31,7 +31,12 @@ namespace UserProfile.Repositories
         }
         public async Task<User> GetUserById(int userId)
         {
-            return await _context.Users.FindAsync(userId);
+            var user = await _context.Users.FindAsync(userId);
+            if (user == null)
+            {
+                throw new KeyNotFoundException($"User with ID {userId} not found.");
+            }
+            return user;
         }
         public async Task<User> UpdateUser(User user)
         {
