@@ -54,7 +54,7 @@ namespace UserProfile.NUnitTests
         [Test]
         public async Task GetUserById_ReturnsNotFound_WhenUserDoesNotExist()
         {
-            _mockUserService.Setup(s => s.GetUserById(99)).ReturnsAsync((User?)null);
+            _mockUserService.Setup<Task<User?>>(s => s.GetUserById(99)).ReturnsAsync((User?)null);
 
             var result = await _controller.GetUserById(99);
 
